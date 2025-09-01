@@ -1,0 +1,36 @@
+{
+  "name": "evercare-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:users": "ts-node UserService/index.ts",
+    "start:bookings": "ts-node BookingService/index.ts",
+    "start:jobs": "ts-node JobPostingService/index.ts",
+    "start:chat": "ts-node ChatService/index.ts",
+    "start:all": "node start-services.js",
+    "dev": "node start-services.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.14.1",
+    "reflect-metadata": "^0.2.2",
+    "sequelize": "^6.37.5",
+    "typeorm": "^0.3.21"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
